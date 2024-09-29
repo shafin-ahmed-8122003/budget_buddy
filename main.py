@@ -1,8 +1,7 @@
-import os
 import time
-
-def clear_screen():
-    os.system("clear")
+from add_expanse import *
+from remove_expanse import *
+from clear_screen import *
 
 def wait_for(seconds):
     time.sleep(seconds)
@@ -23,7 +22,11 @@ while True:
 
     choice = input("> ")
 
+    if choice == "1":
+        add_expanse()
     
+    if choice == "2":
+        remove_expanse()
 
     if (choice == "3"):
         clear_screen()
